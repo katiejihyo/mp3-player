@@ -10,17 +10,17 @@ Naming convention for audio files must abide by the following pattern and stored
 0015.mp3
 
 ## Wiring Reference
-Power core (PowerBoost 1000C): LiPo battery → PowerBoost JST jack (stays plugged in always); charge via microUSB; Vs/5V out → 5V rail; GND → GND rail; EN → slide switch center pin.
+Power core (PowerBoost 1000C): LiPo battery → PowerBoost JST jack; Vs/5V out → 5V rail; GND → GND rail; EN → slide switch center pin.
 
-Power switch (SPDT slide): center pin → PowerBoost EN; one outer pin → GND rail; other outer pin empty.
+Power switch: center pin → PowerBoost EN; one outer pin → GND rail
 
-Arduino Nano power: 5V pin → 5V rail (not VIN); GND → GND rail.
+Arduino Nano power: 5V pin → 5V rail; GND → GND rail.
 
 DFPlayer Mini: VCC → 5V rail; GND → GND rail; TX → Nano D2; RX → Nano D3 (via 1kΩ resistor in-line); DAC_L → jack left; DAC_R → jack right; DAC_GND → jack sleeve/ground.
 
 OLED (SSD1306, I2C @ 0x3C): VCC → 5V rail; GND → GND rail; SDA → Nano A4; SCL → Nano A5.
 
-Control buttons (each: one leg to Nano pin, other leg to GND rail): Play/Pause → D4; Next → D5; Previous → D6.
+Control buttons: Play/Pause → D4; Next → D5; Previous → D6.
 
 Headphone jack: left → DFPlayer DAC_L; right → DFPlayer DAC_R; sleeve/ground → DFPlayer DAC_GND.
 
