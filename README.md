@@ -9,7 +9,7 @@ Naming convention for audio files must abide by the following pattern and stored
 ...
 0015.mp3
 
-# Wiring Reference
+## Wiring Reference
 Power core (PowerBoost 1000C): LiPo battery → PowerBoost JST jack (stays plugged in always); charge via microUSB; Vs/5V out → 5V rail; GND → GND rail; EN → slide switch center pin.
 
 Power switch (SPDT slide): center pin → PowerBoost EN; one outer pin → GND rail; other outer pin empty.
